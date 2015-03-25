@@ -1,7 +1,7 @@
 {
   "name": "austin-showlist-scraper",
   "version": "1.0.0",
-  "description": "Scrape showlistaustin.com for upcoming shows",
+  "description": "Scrape showlistaustin.com for upcoming live-music shows in Austin, TX",
   "main": "./dist/AustinShowlistScraper.js",
   "author": {
     "name": "Brandon Valosek",

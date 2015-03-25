@@ -1,6 +1,6 @@
 # Austin Showlist Scraper
 
-Scrape [austinshowlist.com](http://austinshowlist.com/) for upcoming shows in
+Scrape [showlistaustin.com](http://showlistaustin.com/) for upcoming shows in
 Austin, TX.
 
 ## Installation

@@ -1,7 +1,7 @@
 {
   "name": "austin-showlist-scraper",
   "version": "1.0.0",
-  "description": "Scrape austinshowlist.com for upcoming shows",
+  "description": "Scrape showlistaustin.com for upcoming shows",
   "main": "./dist/AustinShowlistScraper.js",
   "author": {
     "name": "Brandon Valosek",

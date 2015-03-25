@@ -1,6 +1,6 @@
 {
   "name": "austin-showlist-scraper",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Scrape austinshowlist.com for upcoming shows",
   "main": "./dist/AustinShowlistScraper.js",
   "author": {

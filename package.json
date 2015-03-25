@@ -1,0 +1,30 @@
+{
+  "name": "austin-showlist-scraper",
+  "version": "0.1.0",
+  "description": "Scrape austinshowlist.com for upcoming shows",
+  "main": "./dist/AustinShowlistScraper.js",
+  "author": {
+    "name": "Brandon Valosek",
+    "email": "bvalosek@gmail.com",
+    "url": "http://bvalosek.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bvalosek/austin-showlist-scraper.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "babel src --experimental --loose=all --out-dir dist",
+    "test": "babel-node --exerimental --loose=all ./test"
+  },
+  "devDependencies": {
+    "babel": "^4.7.16",
+    "tape": "^3.5.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "he": "^0.5.0",
+    "moment": "^2.9.0",
+    "request": "^2.54.0"
+  }
+}

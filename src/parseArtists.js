@@ -1,0 +1,74 @@
+import Artist from './models/Artist.js';
+
+/**
+ * Iterable that will parse a string of artists like:
+ *
+ * A, B (info), C (info), D (some, info)
+ *
+ * Needed because the above nested format isn't parsable by regex
+ */
+export default function* parseArtists(sArtists: String):
+  Iterable<{artist: Artist; info: String}>
+{
+  let n = 0;
+  let pCount = 0;
+  let s = sArtists.charAt(0);
+  let name = '';
+  let info = '';
+
+  let makeArtist = function* () {
+    name = name.trim();
+
+    let m;
+    if ((m = name.match(/featuring (.*)/))) {
+      let names = m[1].split(' and ');
+      for (let n of names) {
+        let artist = new Artist();
+        artist.name = n;
+        yield { artist, info };
+      }
+    } else {
+      let artist = new Artist();
+      artist.name = name;
+      yield { artist, info };
+    }
+
+    info = name = '';
+  };
+
+  for (let s of sArtists) {
+    switch (s) {
+      default:
+        if (!pCount) {
+          name += s;
+        } else {
+          info += s;
+        }
+        break;
+      case ',':
+        if (!pCount) {
+          yield* makeArtist();
+        } else {
+          info += s;
+        }
+        break;
+      case '(':
+        pCount++;
+        if (pCount > 1) {
+          info += s;
+        }
+        break;
+      case ')':
+        pCount--;
+        if (pCount > 0) {
+          info += s;
+        }
+        break;
+    }
+  }
+
+  // Flush buffers
+  yield* makeArtist();
+}
+
+

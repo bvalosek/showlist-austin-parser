@@ -1,6 +1,6 @@
 {
   "name": "austin-showlist-scraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scrape showlistaustin.com for upcoming live-music shows in Austin, TX",
   "main": "./dist/AustinShowlistScraper.js",
   "author": {

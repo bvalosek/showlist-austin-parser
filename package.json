@@ -14,11 +14,17 @@
   },
   "license": "MIT",
   "scripts": {
-    "prepublish": "babel src --experimental --loose=all --out-dir dist",
-    "test": "babel-node --exerimental --loose=all ./test"
+    "example": "node example.js",
+    "prepublish": "./node_modules/babel-cli/bin/babel.js src --out-dir dist",
+    "test": "./node_modules/babel-cli/bin/babel-node.js  ./test"
   },
   "devDependencies": {
-    "babel": "^4.7.16",
+    "babel-cli": "^6.11.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-regenerator": "^6.11.4",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2017": "^1.6.1",
     "tape": "^3.5.0"
   },
   "dependencies": {

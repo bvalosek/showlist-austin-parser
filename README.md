@@ -1,5 +1,7 @@
 # Showlist Austin Parser
 
+[![CircleCI](https://circleci.com/gh/bvalosek/showlist-austin-parser/tree/master.svg?style=svg)](https://circleci.com/gh/bvalosek/showlist-austin-parser/tree/master)
+
 Parse the HTML from [showlistaustin.com](http://showlistaustin.com/) for
 upcoming live-music shows in Austin, TX.
 

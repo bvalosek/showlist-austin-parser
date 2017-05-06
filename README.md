@@ -3,7 +3,7 @@
 Parse the HTML from [showlistaustin.com](http://showlistaustin.com/) for
 upcoming live-music shows in Austin, TX.
 
-Powers the [showgoat.net](ShowGOAT.net) site.
+Powers the [ShowGOAT.net](https://showgoat.net) site.
 
 > This was previously
 > [austin-showlist-scraper v1](https://github.com/bvalosek/austin-showlist-scraper/tree/v1.0.1)

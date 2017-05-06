@@ -6,7 +6,7 @@ upcoming live-music shows in Austin, TX.
 Powers the [https://showgoat.net](ShowGOAT.net) site.
 
 > This was previously
-> [austin-showlist-scraper](https://github.com/bvalosek/austin-showlist-scraper/tree/v1.0.1)
+> [austin-showlist-scraper v1](https://github.com/bvalosek/austin-showlist-scraper/tree/v1.0.1)
 
 ## Installation
 

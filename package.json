@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "cheerio": "0.22.0",
+    "debug": "2.6.6",
     "he": "1.1.1",
     "moment-timezone": "0.5.13"
   },

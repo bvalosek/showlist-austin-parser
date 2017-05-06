@@ -21,12 +21,12 @@ The library exports a single method that will take HTML and return an ES6
 
 
 ```javascript
-const parser = require('showlist-austin-parser');
+const parse = require('showlist-austin-parser');
 const fetch = require('node-fetch');
 
 (async () => {
 
-  const resp = await fetch.get('http://showlistaustin.com');
+  const resp = await fetch('http://showlistaustin.com');
   const html = await resp.text();
 
   const shows = parse(html);
@@ -35,7 +35,7 @@ const fetch = require('node-fetch');
     console.log(show);
   }
 
-})():
+})();
 ```
 
 ## Testing

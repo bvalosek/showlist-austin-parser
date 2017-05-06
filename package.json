@@ -6,12 +6,12 @@
   "repository": "git@github.com:bvalosek/showlist-austin-parser.git",
   "license": "MIT",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tape lib/**/*.spec.js"
   },
   "dependencies": {
     "cheerio": "0.22.0",
     "he": "1.1.1",
-    "moment": "2.18.1"
+    "moment-timezone": "0.5.13"
   },
   "devDependencies": {
     "tape": "4.6.3"

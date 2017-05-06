@@ -1,5 +1,5 @@
 {
-  "name": "austin-showlist-scraper",
+  "name": "showlist-austin-parser",
   "version": "2.0.0",
   "description": "Parse the HTML from showlistaustin.com for upcoming live-music shows in Austin, TX",
   "author": "Brandon Valosek <bvalosek@gmail.com>",

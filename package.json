@@ -6,7 +6,7 @@
   "repository": "git@github.com:bvalosek/showlist-austin-parser.git",
   "license": "MIT",
   "scripts": {
-    "test": "tape lib/**/*.spec.js"
+    "test": "tape lib/**/*.spec.js lib/*.spec.js"
   },
   "dependencies": {
     "cheerio": "0.22.0",
